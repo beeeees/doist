@@ -9,6 +9,9 @@
 			padding: 0 $spacer;
 			a {
 				color: $gray-600;
+				&:hover {
+					color: $gray-800;
+				}
 			}
 		}
 	}

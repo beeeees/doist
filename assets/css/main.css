@@ -7118,6 +7118,19 @@ p {
       padding: 0 1rem; }
       .top-bar ul li a {
         color: #6D6F6F; }
+        .top-bar ul li a:hover {
+          color: #474747; }
+
+select {
+  border-radius: 2px;
+  border: 1px solid #E1E1E1;
+  color: #6D6F6F;
+  padding: 0.25rem 0.5rem;
+  -webkit-appearance: none !important;
+  background-image: url(../img/icon-angledown.svg);
+  background-origin: content-box;
+  background-position: 100% center;
+  background-repeat: no-repeat; }
 
 footer {
   background-color: #F7F7F7;

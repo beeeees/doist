@@ -1,0 +1,11 @@
+select {
+	border-radius: 2px;
+	border: 1px solid $gray-300;
+	color: $gray-600;
+	padding: ($spacer/4) ($spacer/2);
+    -webkit-appearance: none !important;
+	background-image: url(../img/icon-angledown.svg);
+    background-origin: content-box;
+    background-position: 100% center;
+    background-repeat: no-repeat;
+}

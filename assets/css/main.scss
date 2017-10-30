@@ -1,0 +1,19 @@
+//====================================
+// Global Imports
+//====================================
+
+
+// 1- Import bootstrap framework
+@import '1-frameworks/index';
+
+// 2 - Import plugins/vendors
+@import '2-vendors/index';
+
+// 3 - Import base style, custom variables and mixins
+@import '3-base/index';
+
+// 4 - Import shared components
+@import '4-components/index';
+
+// 5 - Import layout/page specific  styles
+@import '5-layout/index';

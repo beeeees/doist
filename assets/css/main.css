@@ -644,7 +644,7 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.3;
   color: inherit; }
 
 h1, .h1 {
@@ -672,28 +672,28 @@ h6, .h6 {
 .display-1 {
   font-size: 6rem;
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.3; }
 
 .display-2 {
   font-size: 5.5rem;
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.3; }
 
 .display-3 {
   font-size: 4.5rem;
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.3; }
 
 .display-4 {
   font-size: 3.5rem;
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.3; }
 
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  border-top: 1px solid #E1E1E1; }
 
 small,
 .small {
@@ -1925,7 +1925,7 @@ select.form-control:focus::-ms-value {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
   font-size: 0.875rem;
-  line-height: 1.5; }
+  line-height: 1.3; }
 
 .col-form-legend {
   padding-top: 0.375rem;
@@ -1954,13 +1954,13 @@ select.form-control:focus::-ms-value {
 .input-group-sm > .input-group-btn > .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  line-height: 1.5;
+  line-height: 1.3;
   border-radius: 0.2rem; }
 
 select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]),
 .input-group-sm > select.input-group-addon:not([size]):not([multiple]),
 .input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]) {
-  height: calc(1.8125rem + 2px); }
+  height: calc(1.6375rem + 2px); }
 
 .form-control-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
@@ -2637,7 +2637,7 @@ fieldset[disabled] a.btn {
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  line-height: 1.5;
+  line-height: 1.3;
   border-radius: 0.2rem; }
 
 .btn-block {
@@ -3132,7 +3132,7 @@ tbody.collapse.show {
     opacity: 0; }
 
 .custom-select-sm {
-  height: calc(1.8125rem + 2px);
+  height: calc(1.6375rem + 2px);
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   font-size: 75%; }
@@ -3915,7 +3915,7 @@ tbody.collapse.show {
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
-  line-height: 1.5; }
+  line-height: 1.3; }
 
 .pagination-sm .page-item:first-child .page-link {
   border-top-left-radius: 0.2rem;
@@ -7051,7 +7051,11 @@ a.text-dark:focus, a.text-dark:hover {
 body {
   -webkit-font-smoothing: antialiased; }
 
-h1, h2 {
+a:hover {
+  font-weight: medium;
+  text-decoration: none; }
+
+h1, h2, h3 {
   color: #474747; }
 
 h3 {
@@ -7059,6 +7063,36 @@ h3 {
 
 h4 {
   font-weight: normal; }
+
+p {
+  margin-bottom: 0; }
+
+.arrow-right {
+  position: relative; }
+  .arrow-right:after {
+    content: '';
+    position: relative;
+    background-image: url(../img/icon-arrowright.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 12px;
+    display: inline-block;
+    left: 0.5rem;
+    -webkit-transition: left 350ms;
+    transition: left 350ms; }
+  .arrow-right:hover:after {
+    left: 1rem;
+    -webkit-transition: left 350ms;
+    transition: left 350ms; }
+
+.highlight {
+  border: 1px solid #E44232;
+  border-radius: 2px;
+  color: #E44232;
+  font-size: 80%;
+  margin-left: 0.5rem;
+  padding: 0.1rem 0.2rem; }
 
 /* Base Styles and Helpers -------------------- */
 .align-right {
@@ -7068,6 +7102,11 @@ h4 {
   margin: 0;
   padding: 0;
   list-style: none; }
+
+.ac {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .top-bar {
   border-bottom: 1px solid #E1E1E1;
@@ -7079,5 +7118,38 @@ h4 {
       padding: 0 1rem; }
       .top-bar ul li a {
         color: #6D6F6F; }
+
+footer {
+  background-color: #F7F7F7;
+  border-top: 1px solid #E1E1E1;
+  font-size: 0.8rem;
+  padding: 1.5rem 0;
+  line-height: 1.5; }
+  footer p {
+    font-size: 0.8rem; }
+    footer p strong {
+      font-weight: medium; }
+  footer a {
+    color: #6D6F6F; }
+    footer a:hover {
+      color: #474747; }
+  footer ul.footer-nav {
+    margin-top: 1rem; }
+    footer ul.footer-nav li {
+      padding: 0.1rem 0; }
+  footer select {
+    margin-top: 1rem; }
+  footer .contact {
+    margin: 3rem 0 0 0;
+    border-top: 1px solid #E1E1E1;
+    padding: 1rem 0 0 0; }
+
+header {
+  padding: 4rem 0; }
+
+section {
+  border-top: 1px solid #E1E1E1;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 /*# sourceMappingURL=main.css.map */

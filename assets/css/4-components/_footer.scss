@@ -1,0 +1,34 @@
+footer {
+	background-color: $gray-100;
+	border-top: 1px solid $gray-300;
+	font-size: 0.8rem;
+	padding: ($spacer * 1.5) 0;
+	line-height: 1.5;
+	p {
+		font-size: 0.8rem;
+		strong { 
+			font-weight: medium;
+		}
+	}
+	a {
+		color: $gray-600;
+		&:hover {
+			color: $gray-800;
+		}
+	}
+	ul.footer-nav {
+		margin-top: $spacer;
+		li {
+			padding: 0.1rem 0;
+		}
+	}
+
+	select {
+ 		margin-top: $spacer;
+	}
+	.contact {
+		margin: ($spacer * 3) 0 0 0;
+		border-top: 1px solid $gray-300;
+		padding: $spacer 0 0 0;
+	}
+}

@@ -2,7 +2,15 @@
 body {
 	-webkit-font-smoothing: antialiased;
 }
-h1, h2 {
+
+a {
+	&:hover {
+		font-weight: medium;
+		text-decoration: none;
+	}
+}
+
+h1, h2, h3 {
 	color: $gray-800;
 }
 
@@ -24,9 +32,34 @@ h4 {
 
 
 p {
-
+	margin-bottom: 0;
 }
 
 .arrow-right {
+	position: relative;
+	&:after {
+		content: '';
+		position: relative;
+		background-image: url(../img/icon-arrowright.svg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		width: 14px;
+		height: 12px;
+		display: inline-block;
+		left: ($spacer/2);
+		transition: left 350ms;
+	}
+	&:hover:after {
+		left: $spacer;
+		transition: left 350ms;
+	}
+}
 
+.highlight {
+	border: 1px solid $primary;
+	border-radius: 2px;
+	color: $primary;
+	font-size: 80%;
+	margin-left: ($spacer/2);
+	padding: 0.1rem 0.2rem;
 }

@@ -88,7 +88,45 @@
             <h3>Application form</h3>
           </div>
           <div class="col-lg-8">
-            form
+
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your name <span class="small">(Required)</span></label>
+                  <input type="name" class="form-control" id="name" placeholder="Your full name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="email">Your email <span class="small">(Required)</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="name@doist.com" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="business">Your Todoist Business team name <span class="small">(Required)</span></label>
+                <input type="text" class="form-control" id="business" placeholder="The Acme Foundation" required>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="nonprofit-email">Your non-profit’s email <span class="small">(Required)</span></label>
+                  <input type="email" class="form-control" id="nonprofit-email" placeholder="123@gmail.com" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="nonprofit-email">Your non-profit’s email <span class="small">(Required)</span></label>
+                  <input type="email" class="form-control" id="nonprofit-email" placeholder="123@gmail.com" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="mission">Your non-profit’s mission <span class="small">(Required)</span></label>
+                <textarea class="form-control" id="mission" rows="8" placeholder="A sentence or two on what your organization hopes to accomplish in the world..." required></textarea>
+              </div>
+              <div class="form-group">
+                <p>That proves your organization’s nonprofit status – like a 501 (c)(3) or your country’s version of similar documentation. <span class="small">(Required)</span></p>
+                <label for="status-file">Select files</label>
+                <input type="file" class="form-control-file" id="status-file">
+              </div>
+              <hr />
+              <div class="pull-right"><button type="submit" class="btn btn-primary outline">Submit the non-profit discount request form</button></div>
+            </form>
+
           </div>
         </div>
       </section>

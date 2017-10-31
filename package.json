@@ -4,7 +4,7 @@
   "description": "doist test project",
   "main": "index.js",
   "scripts": {
-    "start": "gulp serve",
+    "dev": "http-server",
     "postinstall": "gulp"
   },
   "author": "bethany brown",
@@ -16,7 +16,6 @@
   "dependencies": {
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",
-    "express": "^4.16.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-concat": "^2.6.1",
@@ -25,7 +24,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "http-server": "^0.10.0"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13"

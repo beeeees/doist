@@ -35,4 +35,10 @@ footer {
 		border-top: 1px solid $gray-300;
 		padding-top: $spacer;
 	}
+	ul.social-nav {
+		li {
+			display: inline-block;
+			padding: 0 ($spacer/2);
+		}
+	}
 }

@@ -1,16 +1,59 @@
+$topbar-height: 65px;
 .top-bar {
 	border-bottom: 1px solid $gray-300;
-	padding: ($spacer * 1.5) 0 $spacer;
-
+	padding: $spacer 0;
+	background-color: #fff;
+	z-index: 9;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	.container {
+		position: relative;
+	}
+	.navbar-brand {
+		position: relative;
+		z-index: 99;
+	}
 	ul {
-		width: 100%;
+		float: right;
 		li {
 			display: inline-block;
 			padding: 0 $spacer;
 			a {
 				color: $gray-600;
 				&:hover {
-					color: $gray-800;
+					color: $primary;
+				}
+			}
+		}
+	    @include media-breakpoint-down(md) { 
+			background-color: #fff;
+			float: none;
+			width: 100%;
+			left: -100%;
+			opacity: 0;
+			z-index: 9;
+			height: 100%;
+			top: 0;
+			position: fixed;
+  			transition: left 500ms, opacity 500ms;
+  			padding-top: $topbar-height;
+			&.active {
+		    	opacity: 1;
+		    	left: 0;
+  				transition: left 500ms, opacity 500ms;
+			}
+			li {
+				width: 100%;
+				display: block;
+				padding: $spacer 0;
+				text-align: center;
+				a {
+					color: $gray-600;
+					&:hover {
+						color: $gray-800;
+					}
 				}
 			}
 		}

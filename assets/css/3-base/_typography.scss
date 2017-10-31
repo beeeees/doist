@@ -14,14 +14,6 @@ h1, h2, h3 {
 	color: $gray-800;
 }
 
-h1 {
-
-}
-
-h2 {
-
-}
-
 h3 {
 	font-weight: medium;
 }
@@ -37,6 +29,7 @@ p {
 .arrow-right {
 	position: relative;
 	display: block;
+    transform: translateX(-10px);
 	&:after {
 		content: '';
 		position: relative;

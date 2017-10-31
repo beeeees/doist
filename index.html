@@ -23,7 +23,7 @@
       <div class="container">
 
         <div class="row ac">
-          <div class="col-md-3">
+          <div class="col-6 col-md-3">
           <a href="#" role="heading" class="navbar-brand">
               <img src="/assets/img/logo-todoist.svg" width="127" height="32" alt="Todoist logo" />
             <span class="invisible">Todoist</span>
@@ -32,13 +32,18 @@
           
 
           <nav class="col text-right">
-            <ul class="list-unstyled" role="navigation">
+            <ul class="list-unstyled nav" role="navigation" id="menu">
               <li><a href="/">How it works</a></li>
               <li><a href="/">Premium</a></li>
               <li><a href="/">Pricing</a></li>
               <li><a href="/">Log in</a></li>
               <li><a href="/">Sign up</a></li>
             </ul>
+            <button class="hamburger collapse" type="button" id="hamburger" aria-controls="menu">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
           </nav>
         </div>
       </div>
@@ -54,7 +59,7 @@
           </div>
 
           <div class="col-lg-4 offset-lg-1">
-            <img src="/assets/img/header-nonprofit.png" data-rjs="2" class="img-responsive" alt="illustration of non profits and Todoist" />
+            <img src="/assets/img/header-nonprofit.png" data-rjs="2" class="img-responsive" alt="illustration of non profits and Todoist" id="header-img" />
           </div>
         </div>
       </header>
@@ -122,8 +127,8 @@
               <div class="form-group">
                 <p>That proves your organization’s nonprofit status – like a 501 (c)(3) or your country’s version of similar documentation. <span class="small">(Required)</span></p>
                 <input type="file" class="custom-file-input" name="file" id="file" required/>
-                <label for="file" class="custom-file-label btn btn-primary outline">Select file</label>
-                <span class="small" id="file-path">No file selected</span>
+                <label for="file" class="custom-file-label btn btn-primary outline">Select files</label>
+                <span class="small" id="file-path">No file has been selected</span>
               </div>
               <hr />
               <button type="submit" class="btn btn-primary outline">Submit the <span class="d-none d-md-inline">non-profit discount request</span> form</button>
@@ -158,8 +163,7 @@
         <div class="row">
           <div class="col-xs-12 col-md-4 col-lg">
             <p><strong>Language</strong></p>
-            <select>
-              <!-- to do// js to navigate to link on option selection -->
+            <select id="language">
               <option value="https://da.todoist.com" target="_top">Dansk</option>
               <option selected="selected" value="https://en.todoist.com" target="_top">English</option>
               <option value="https://de.todoist.com" target="_top">Deutsch</option>
@@ -220,7 +224,7 @@
           <div class="col-xs-12 col-md-4 col-lg">
             <p>From our blog</p>
             <ul class="list-unstyled footer-nav" role="navigation">
-              <li><a href="#">Systemist: A productivity  workflow by Todoist's founder</a></li>
+              <li><a href="#">Systemist: A productivity workflow by Todoist's founder</a></li>
               <li><a href="#">10 Little-Known Todoist Features That Will Change Your Life </a></li>
               <li><a href="#">The Ultimate Guide to Personal Productivity Methods </a></li>
               <li><a href="#">Read more</a></li>
@@ -230,11 +234,14 @@
 
         <div class="row contact ac">
           <div class="col-xs-12 col-md">
-            <p><a href="#">Keep in touch</a></p>
+            <p>Keep in touch</p>
           </div>
           <div class="col-xs-12 col-md text-right-md">
-            <ul class="list-unstyled social">
-              social icons
+            <ul class="list-unstyled social-nav" role="navigation">
+              <li><a href="https://twitter.com/todoist" target="_blank" rel="noopener" title="Twitter"><img src="/assets/img/icon-twitter.svg" width="22" height="18" alt="Twitter" /></a></li>
+              <li><a href="https://www.facebook.com/Todoist/" target="_blank" rel="noopener" title="Facebook"><img src="/assets/img/icon-fb.svg" width="22" height="20" alt="Facebook" /></a></li>
+              <li><a href="http://www.youtube.com/user/DoistApps/videos" target="_blank" rel="noopener" title="Youtube"><img src="/assets/img/icon-youtube.svg" width="24" height="17" alt="Youtube" /></a></li>
+              <li><a href="https://instagram.com/todoistofficial/" target="_blank" rel="noopener" title="Instagram"><img src="/assets/img/icon-instagram.svg" width="24" height="24" alt="Instagram" /></a></li>
             </ul>
           </div>
         </div>

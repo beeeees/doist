@@ -29,12 +29,14 @@ select {
 	overflow: hidden;
 	position: absolute;
 	z-index: -1;
+	background: url(../img/icon-arrowup-white.svg)  no-repeat -9999px -9999px; // preload for hover state
 	+ label.outline{
 	    font-weight: normal;
 	    display: inline-block;
 	    cursor: pointer;
 	    position: relative;
 	    padding-left: ($spacer*2);
+	    color: $gray-600;
 	    &:before {
 	    	content: '';
 			background-image: url(../img/icon-arrowup.svg);

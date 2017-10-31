@@ -1,0 +1,16 @@
+.btn-primary {
+	&.outline {
+		border-color: $primary;
+		border-width: 2px;
+		font-weight: bold;
+		color: $primary;
+		background-color: transparent;
+		transition: all 350ms;
+		&:hover {
+			color: $white;
+			background-color: $primary;
+			transition: all 350ms;
+			cursor: pointer;
+		}
+	}
+}

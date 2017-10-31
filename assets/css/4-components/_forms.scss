@@ -9,3 +9,27 @@ select {
     background-position: 100% center;
     background-repeat: no-repeat;
 }
+
+.form-group span.small {
+	color: $gray-500;
+	margin-left: ($spacer/2);
+}
+
+input:focus::-webkit-input-placeholder{
+	color: transparent!important;
+}
+input:focus::-moz-placeholder{
+	color: transparent!important;
+}
+input:focus:-moz-placeholder{
+	color: transparent!important;
+}
+textarea:focus::-webkit-input-placeholder{
+	color: transparent!important;
+}
+textarea:focus::-moz-placeholder{
+	color: transparent!important;
+}
+textarea:focus:-moz-placeholder{
+	color: transparent!important;
+}

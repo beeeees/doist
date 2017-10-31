@@ -1,4 +1,4 @@
-/* Base Styles and Helpers -------------------- */
+/* Base Styles and Helpers/Utility classes -------------------- */
 
 .align-right {
 	text-align: right;
@@ -14,3 +14,6 @@
 	align-items: center;
 }
 
+.pull-right {
+	float: right;
+}

@@ -4,6 +4,7 @@
   "description": "doist test project",
   "main": "index.js",
   "scripts": {
+    "dev": "gulp serve",
     "start": "http-server",
     "postinstall": "gulp"
   },

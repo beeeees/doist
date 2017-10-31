@@ -1,7 +1,28 @@
 /* Base Styles and Helpers/Utility classes -------------------- */
 
-.align-right {
+.text-right {
 	text-align: right;
+	&-md {
+		margin-top: $spacer;
+	    @include media-breakpoint-up(md) { 
+	    	margin-top: 0;
+			text-align: right;
+	    }
+	}
+	&-lg {
+		margin-top: $spacer;
+	    @include media-breakpoint-up(lg) { 
+	    	margin-top: 0;
+			text-align: right;
+	    }
+	}
+	&-xl {
+		margin-top: $spacer;
+	    @include media-breakpoint-up(xl) { 
+	    	margin-top: 0;
+			text-align: right;
+	    }
+	}
 }
 
 .list-unstyled {
@@ -14,6 +35,6 @@
 	align-items: center;
 }
 
-.pull-right {
-	float: right;
+.img-responsive {
+	max-width: 100%;
 }

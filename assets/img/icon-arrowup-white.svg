@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="14px" viewBox="0 0 12 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-arrowup</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11.9991518,7.00071207 C11.9991518,7.0001942 11.9991518,6.99967633 11.9991518,6.99864059 L11.9996518,7.0001942 L11.9991518,7.00071207 Z M12.7071328,6.26740535 L7.76776515,1.15186596 C7.57227039,0.949378014 7.25627885,0.949378014 7.06078409,1.15186596 C6.86528932,1.35383603 6.86528932,1.68164899 7.06078409,1.88413693 C7.06078409,1.88413693 11.5176647,6.48594733 11.5156648,6.48594733 L-0.500013392,6.48594733 C-0.776006,6.48594733 -1,6.71795397 -1,7.00381931 C-1,7.29020251 -0.776006,7.52169128 -0.500013392,7.52169128 L11.5156648,7.52169128 L7.06078409,12.1157336 C6.86528932,12.3182215 6.86528932,12.6460345 7.06078409,12.8485224 C7.25627885,13.0504925 7.57277037,13.0504925 7.76776515,12.8485224 L12.7071328,7.73246518 C13.0976224,7.32748929 13.0976224,6.67186337 12.7071328,6.26740535 L12.7071328,6.26740535 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="design" transform="translate(-553.000000, -1363.000000)">
+            <g id="Group" transform="translate(544.000000, 1353.000000)">
+                <g id="Title" transform="translate(9.000000, 4.000000)">
+                    <g id="icon-arrowup" transform="translate(0.000000, 6.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Fill-1" fill="#ffffff" transform="translate(6.000000, 7.000000) rotate(-90.000000) translate(-6.000000, -7.000000) " xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

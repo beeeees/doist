@@ -54,9 +54,6 @@ You might want to run concatScripts once seperately after adding new js files.
 gulp concatScripts
 ```
 
-## Overwriting Bootstrap sass variables
-You can overwrite specific bootstrap sass variables by uncommenting lines in assets/css/1-frameworks/bootstrap/bootstrap-user-variables.scss
-
 ## Heroku deployment
 Support for heroku deployment via `http-server` and a `procfile`. 
 [http://test-project-bb.herokuapp.com/](http://test-project-bb.herokuapp.com/)

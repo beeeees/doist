@@ -13,8 +13,54 @@ select {
 .form-group span.small {
 	color: $gray-500;
 	margin-left: ($spacer/2);
+
+	&.selected {
+		color: $primary;
+	}
 }
 
+// custom file upload button
+.custom-file-input {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+	+ label.outline{
+	    font-weight: normal;
+	    display: inline-block;
+	    cursor: pointer;
+	    position: relative;
+	    padding-left: ($spacer*2);
+	    &:before {
+	    	content: '';
+			background-image: url(../img/icon-arrowup.svg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			position: absolute;
+			width: 12px;
+			height: 14px;
+		    left: ($spacer/2);
+		    top: 0.85rem;
+	    	transition: all 250ms;
+	    }
+	    &:hover:before {
+	    	transition: all 250ms;
+	    	transform: rotate(90deg);
+	    	transform-origin: center;
+			background-image: url(../img/icon-arrowup-white.svg);
+	    }
+	    * {
+	    	pointer-events: none;
+	    }
+	}
+	&:focus + label {
+		outline: -webkit-focus-ring-color auto 5px;
+	}
+}
+
+// hide placeholder text on focus
 input:focus::-webkit-input-placeholder{
 	color: transparent!important;
 }

@@ -1,5 +1,13 @@
 header {
-	padding: ($spacer * 4) 0;
+	padding: ($spacer * 3) 0;
+    @include media-breakpoint-up(lg) { 
+		padding: ($spacer * 4) 0;
+    }
+    img {
+	    @include media-breakpoint-down(lg) { 
+	    	margin-top: ($spacer*1.5);
+	    }
+	}
 }
 
 section {
@@ -11,5 +19,10 @@ section {
 form {
 	.btn {
 		margin-top: $spacer;
+	}
+	button[type="submit"]{
+	    @include media-breakpoint-up(md) { 
+	    	float: right;
+	    }
 	}
 }

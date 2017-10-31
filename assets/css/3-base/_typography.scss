@@ -30,13 +30,13 @@ h4 {
 	font-weight: normal;
 }
 
-
 p {
 	margin-bottom: 0;
 }
 
 .arrow-right {
 	position: relative;
+	display: block;
 	&:after {
 		content: '';
 		position: relative;

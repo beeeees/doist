@@ -1,20 +1,22 @@
 {
-  "name": "bootstrap-4-boiler-plate",
+  "name": "doist",
   "version": "1.0.0",
-  "description": "a bootstrap 4 boiler plate with sass, concatenation, minification, autoprefixer, sourcemaps, browser-sync, git and gulp task runner",
+  "description": "doist test project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+    "start": "gulp serve",
+    "postinstall": "gulp"
   },
-  "author": "wapbamboogie",
+  "author": "bethany brown",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wapbamboogie/bootstrap-4-boilerplate"
+    "url": "https://github.com/beeeees/doist"
   },
-  "devDependencies": {
+  "dependencies": {
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",
+    "express": "^4.16.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-concat": "^2.6.1",
@@ -24,5 +26,8 @@
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-uglify": "^3.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13"
   }
 }

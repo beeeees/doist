@@ -4,6 +4,8 @@ select {
 	color: $gray-600;
 	padding: ($spacer/4) ($spacer/2);
     -webkit-appearance: none !important;
+    -moz-appearance: none;
+    -ie-appearance: none;
 	background-image: url(../img/icon-angledown.svg);
     background-origin: content-box;
     background-position: 100% center;

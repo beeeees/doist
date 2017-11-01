@@ -27,7 +27,7 @@
 
     hamburger: function(){
       // hamburger navigation (keeping it simple for this project)
-      // to do, add a check for the active class, add aria-expanded
+      // additional things i could do: add a check for the active class, add aria-expanded
       this.elements.hamburger.on('click', function() {
         $(this).toggleClass('active');
         $(this).parent().find('.nav').toggleClass('active');

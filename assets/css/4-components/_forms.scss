@@ -3,13 +3,13 @@ select {
 	border: 1px solid $gray-300;
 	color: $gray-600;
 	padding: ($spacer/4) ($spacer/2);
-    -webkit-appearance: none !important;
-    -moz-appearance: none;
-    -ie-appearance: none;
-	background-image: url(../img/icon-angledown.svg);
-    background-origin: content-box;
-    background-position: 100% center;
-    background-repeat: no-repeat;
+  -webkit-appearance: none !important;
+  -moz-appearance: none;
+  -ie-appearance: none;
+  background-image: url(../img/icon-angledown.svg);
+  background-origin: content-box;
+  background-position: 100% center;
+  background-repeat: no-repeat;
 }
 
 .form-group span.small {
@@ -30,30 +30,32 @@ select {
 	position: absolute;
 	z-index: -1;
 	background: url(../img/icon-arrowup-white.svg)  no-repeat -9999px -9999px; // preload for hover state
-	+ label.outline{
+	+ label.outline {
 	    font-weight: normal;
 	    display: inline-block;
+      padding: 0.3rem 0.75rem;
+      border-width: 1px;
 	    cursor: pointer;
 	    position: relative;
-	    padding-left: ($spacer*2);
+	    padding-left: ($spacer*1.8);
 	    color: $gray-600;
 	    &:before {
 	    	content: '';
-			background-image: url(../img/icon-arrowup.svg);
-			background-size: 100%;
-			background-repeat: no-repeat;
-			position: absolute;
-			width: 12px;
-			height: 14px;
+        background-image: url(../img/icon-arrowup.svg);
+  			background-size: 100%;
+  			background-repeat: no-repeat;
+  			position: absolute;
+  			width: 12px;
+  			height: 14px;
 		    left: ($spacer/2);
-		    top: 0.85rem;
+		    top: 0.55rem;
 	    	transition: all 250ms;
 	    }
 	    &:hover:before {
-	    	transition: all 250ms;
-	    	transform: rotate(90deg);
-	    	transform-origin: center;
-			background-image: url(../img/icon-arrowup-white.svg);
+        transition: all 250ms;
+        transform: rotate(90deg);
+        transform-origin: center;
+        background-image: url(../img/icon-arrowup-white.svg);
 	    }
 	    * {
 	    	pointer-events: none;

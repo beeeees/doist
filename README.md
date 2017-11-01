@@ -39,8 +39,8 @@ gulp serve
 
 **gulp (build)**
 
-The default gulp command is set to creating a "dist" directory with a production version of the project, ready to be deployed.
-It minifies and renames js/css assets as well as cleaning the old "dist" directory. CSS is autoprefixed for the latest two browser versions.
+The default gulp command is set to creating a "public" directory with a production version of the project, ready to be deployed.
+It minifies and renames js/css assets as well as cleaning the old "public" directory. CSS is autoprefixed for the latest two browser versions.
 ```
 gulp
 ```
@@ -56,4 +56,5 @@ gulp concatScripts
 
 ## Heroku deployment
 Support for heroku deployment via `http-server` and a `procfile`. 
+`git push heroku master` will execute the start and the build/post install scripts.
 [http://test-project-bb.herokuapp.com/](http://test-project-bb.herokuapp.com/)

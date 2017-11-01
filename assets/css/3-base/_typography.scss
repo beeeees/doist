@@ -29,7 +29,7 @@ p {
 .arrow-right {
 	position: relative;
 	display: block;
-    transform: translateX(-10px);
+	padding-right: $spacer;
 	&:after {
 		content: '';
 		position: relative;

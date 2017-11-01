@@ -5023,8 +5023,7 @@ p {
 .arrow-right {
   position: relative;
   display: block;
-  -webkit-transform: translateX(-10px);
-          transform: translateX(-10px); }
+  padding-right: 1rem; }
   .arrow-right:after {
     content: '';
     position: relative;

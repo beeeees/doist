@@ -1,48 +1,65 @@
 $topbar-height: 65px;
 .top-bar {
-	border-bottom: 1px solid $gray-300;
-	padding: $spacer 0;
-	background-color: #fff;
-	z-index: 9;
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	.container {
-		position: relative;
-	}
-	.navbar-brand {
-		position: relative;
-		z-index: 99;
-	}
-	ul {
-		float: right;
-		li {
-			display: inline-block;
-			padding: 0 $spacer;
-			a {
-				color: $gray-600;
-				&:hover {
-					color: $primary;
-				}
-			}
-		}
-	    @include media-breakpoint-down(md) { 
-			background-color: #fff;
-			float: none;
-			width: 100%;
-			left: -100%;
-			opacity: 0;
-			z-index: 9;
-			height: 100%;
-			top: 0;
-			position: fixed;
+    .fixed {
+      background-color: #fff;;
+      top: 0;
+      left: 0;
+      border-bottom: 1px solid $gray-300;
+      padding: $spacer 0;
+      position: relative;
+      transform: translate3d(0,0,0);
+      z-index: 9;
+      width: 100%;
+      &.sticky {
+        animation: stickyTop 350ms ease-in-out forwards;
+        position: fixed;
+        top: -$topbar-height;
+      }
+    }
+  	.container {
+  		position: relative;
+  	}
+  	.navbar-brand {
+  		position: relative;
+  		z-index: 99;
+      display: inline-block;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-right: 1rem;
+      font-size: 1rem;
+      line-height: inherit;
+      white-space: nowrap;
+  	}
+  	ul {
+  		float: right;
+  		li {
+  			display: inline-block;
+  			padding: 0 $spacer;
+  			a {
+  				color: $gray-600;
+  				&:hover {
+  					color: $primary;
+  				}
+  			}
+  		}
+	    @include media-breakpoint-down(md) {
+  			background-color: #fff;
+  			float: none;
+  			width: 100%;
+  			left: -100%;
+  			opacity: 0;
+  			z-index: 9;
+  			height: 100%;
+  			top: 0;
+  			position: fixed;
   			transition: left 500ms, opacity 500ms;
   			padding-top: $topbar-height;
 			&.active {
 		    	opacity: 1;
 		    	left: 0;
   				transition: left 500ms, opacity 500ms;
+          height: 370px;
+          border-bottom: 1px solid $gray-300;
 			}
 			li {
 				width: 100%;
@@ -58,4 +75,9 @@ $topbar-height: 65px;
 			}
 		}
 	}
+}
+@keyframes stickyTop {
+  100% {
+    top: 0;
+  }
 }

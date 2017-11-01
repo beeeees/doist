@@ -57,7 +57,7 @@ $topbar-height: 65px;
 			&.active {
 		    	opacity: 1;
 		    	left: 0;
-  				transition: left 500ms, opacity 500ms;
+  				transition: left 500ms, opacity 500ms, background-color 500ms;
           height: 370px;
           border-bottom: 1px solid $gray-300;
 			}

@@ -4405,6 +4405,10 @@ p {
 .img-responsive {
   max-width: 100%; }
 
+hr {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem; }
+
 .btn-primary.outline {
   border-color: #E44232;
   border-width: 2px;

@@ -1,5 +1,5 @@
 # Doist test project
-Uses Boostrap 4 and [sass](http://sass-lang.com/), concatenation, minification, autoprefixer, [Browsersync](https://www.browsersync.io/), hot reloading and sourcemaps all runned by [Gulp](https://gulpjs.com/)
+Uses Boostrap 4 Beta and [sass](http://sass-lang.com/), concatenation, minification, autoprefixer, [Browsersync](https://www.browsersync.io/), editor config file, reloading and sourcemaps all run by [Gulp](https://gulpjs.com/).
 
 ## Quick Start
 ```
@@ -55,6 +55,6 @@ gulp concatScripts
 ```
 
 ## Heroku deployment
-Support for heroku deployment via `http-server` and a `procfile`. 
+Support for heroku deployment via `http-server` and a `procfile`.
 `git push heroku master` will execute the start and the build/post install scripts.
 [http://test-project-bb.herokuapp.com/](http://test-project-bb.herokuapp.com/)
